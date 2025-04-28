@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.home, 
+.about, 
+.history, 
+.who-are-we, 
+.mission-vision, 
+.resource, 
+.online-forms, 
+.services, 
+.home-owners {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+ .history {
+    color: white;
+ }
+
+
+
+
+

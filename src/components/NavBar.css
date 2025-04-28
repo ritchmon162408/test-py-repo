@@ -1,0 +1,258 @@
+/* General Navbar Styles */
+.navbar {
+  background: linear-gradient(
+    90deg, 
+    rgb(249, 36, 36) 0%, 
+    rgb(231, 60, 60) 34%, 
+    rgb(255, 107, 107) 68%, 
+    rgb(255, 160, 122) 100%);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  font-size: 1.2rem;
+  top: 0; 
+  z-index: 999; 
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+
+/* Logo and title */
+.navbar-logo {
+  display: flex;
+  justify-self: start;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 300px;
+  margin-left: 10px;
+  height: 100%;
+  color: #fff;
+}
+
+/* logo */
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  border-radius: 60px;
+}
+
+/* Title styling */
+.title {
+  line-height: 1.1;
+  margin-right: 20px;
+}
+
+/* city of */
+.title .small {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* cabuyao */
+.title .medium {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* cudhao */
+.title .large {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.fa-typo3 {
+  margin-left: 0.3rem;
+  font-size: 1.4rem;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  list-style: none;
+  text-align: justify;
+  justify-content: end;
+  flex-grow: 1;
+  grid-gap: 30px;
+  width: 40vw;
+  margin-right: 2rem;
+}
+
+/* Each Menu Item */
+.nav-item {
+  height: 25px;
+  position: relative;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+/* Hover Effect with Underline */
+.nav-link:hover {
+  color: beige;
+  border-bottom: 0px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  margin-top: 5px;
+  display: none;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ff5445;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show Dropdown on Hover */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Links */
+.dropdown-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-link:hover {
+  background: #e64540;
+}
+
+/* Navbar Buttons */
+.navbar-buttons {
+  display: flex;
+  margin-left: 50px;
+  gap: 5px;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+    justify-content: flex-start;
+  } 
+
+  .navbar-logo {
+    margin-right: 170px;
+  }
+
+  .title {
+    margin-right: 10px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: flex;
+    margin-bottom: 80px;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+}

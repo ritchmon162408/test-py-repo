@@ -1,0 +1,56 @@
+:root {
+    --primary: #ffffff;
+    --signup-bg: #2c2c92; /* Dark blue - not used */
+    --login-bg: #22dd88; /* Green - not used */
+    --toggle-bg: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    color: white;
+}
+
+.btn--outline {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+.btn--outline:hover {
+    background-color: var(--primary); /* Dark blue */
+    border-color: var(--primary);
+    color: #ff7e5f;
+}
+
+.btn--primary {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+.btn--primary:hover {
+    background-color: var(--primary); /* Green */
+    border-color: var(--primary);
+    color: #feb47b;
+}
+
+.btn--medium {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn--large {
+    padding: 15px 30px;
+    font-size: 18px;
+}
